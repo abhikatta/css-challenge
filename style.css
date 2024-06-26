@@ -42,7 +42,7 @@ body {
   max-width: 40rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1210px) {
   .row,
   .container,
   .row-container {
