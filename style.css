@@ -6,20 +6,9 @@ body {
   font-size: small;
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  height: fit-content;
-}
-.row-container {
-  display: flex;
-  flex-direction: column;
-}
-.daniel {
-  background-color: purple;
-}
-.row {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .space-1,
 .space-2 {
@@ -30,16 +19,16 @@ body {
 }
 
 .space-1 {
-  width: fit-content;
-  max-width: 20rem;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 .space-1,
 .space-2 {
   margin: 20px;
 }
 .space-2 {
-  width: fit-content;
-  max-width: 40rem;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 @media (max-width: 1210px) {
